@@ -1,78 +1,148 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.E. BATIMENT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hermes Ca Physicians Corp</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header, footer { background: #1f2937; color: white; text-align: center; padding: 30px; }
-    nav a { color: #fbbf24; margin: 0 12px; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
-    h2 { color: #1f2937; margin-bottom: 20px; font-size: 2.4em; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+    :root{
+      --primary:#0e6ba8;
+      --accent:#0b4f74;
+      --bg:#f6f8fb;
+      --text:#2b2b2b;
+      --card:#ffffff;
     }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;color:var(--text);background:var(--bg)}
+    header{
+      background:linear-gradient(135deg,var(--primary),var(--accent));
+      color:#fff;text-align:center;padding:48px 16px
+    }
+    header h1{margin:0 0 8px;font-size:36px}
+    header p{margin:6px 0;opacity:.95}
+    a{color:#fff}
+    .container{max-width:1100px;margin:0 auto;padding:24px 16px}
+    .section{
+      background:var(--card);border-radius:14px;box-shadow:0 10px 28px rgba(0,0,0,.06);
+      display:flex;gap:28px;padding:22px;margin:22px 0;align-items:center
+    }
+    .section:nth-child(odd){flex-direction:row-reverse}
+    .image{flex:1 1 48%;overflow:hidden;border-radius:12px}
+    .image img{width:100%;height:100%;max-height:360px;object-fit:cover;display:block;transform:scale(1.02);transition:transform .35s}
+    .image:hover img{transform:scale(1.06)}
+    .content{flex:1 1 52%}
+    h2{color:var(--accent);margin:0 0 10px;font-size:26px}
+    p{line-height:1.65;margin:0}
+    .badge{display:inline-block;background:#e7f3ff;color:var(--accent);padding:6px 10px;border-radius:30px;font-size:12px;margin-bottom:10px}
+    .grid-contacts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    footer{background:#0b1c2a;color:#dbe6ef;text-align:center;padding:22px 14px;margin-top:10px;font-size:14px}
+    @media(max-width:900px){
+      .section{flex-direction:column !important}
+      .image{width:100%}
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>V.E. BATIMENT</h1>
-  <nav>
-    <a href="#about">Présentation</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="#map">Adresse</a>
-  </nav>
+  <h1>Hermes Ca Physicians Corp</h1>
+  <p>Comprehensive Outpatient Care • Preventive Medicine • Patient-Centered Services</p>
+  <p>✉️ <a href="mailto:contact@zaballsys.shop">contact@zaballsys.shop</a> &nbsp;|&nbsp; 📞 +1 941 294 5853</p>
+  <p>📍 1401 21st St Ste R, Sacramento, CA 95811, USA</p>
 </header>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>Basée à Les Mureaux, V.E. BATIMENT est une entreprise spécialisée dans la maçonnerie générale et les gros travaux de construction. Grâce à une équipe qualifiée, nous réalisons des chantiers sur mesure en respectant les normes de qualité et de sécurité.</p>
-</section>
+<main class="container">
 
-<section id="services">
-  <h2>Nos Services</h2>
-  <p>Gros œuvre de bâtiment, travaux de maçonnerie, fondations, rénovation structurelle, et accompagnement personnalisé pour tous vos projets de construction.</p>
-</section>
+  <!-- 1 -->
+  <section class="section">
+    <div class="image">
+      <img src="https://avatars.mds.yandex.net/i?id=79e922d15702d1e5d5d88c222d9d124af9484e31-5878586-images-thumbs&n=13" alt="Primary & Preventive Care">
+    </div>
+    <div class="content">
+      <span class="badge">Primary Care</span>
+      <h2>Primary & Preventive Care</h2>
+      <p>Routine checkups, vaccinations, and evidence-based prevention programs designed to keep
+         you healthy and identify risk early. Personalized care plans for every age group.</p>
+    </div>
+  </section>
 
-<section id="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1570126681032-3a7c41f13b0d?auto=format&fit=crop&w=800&q=80" alt="chantier 1">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="chantier 2">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="chantier 3">
-  </div>
-</section>
+  <!-- 2 -->
+  <section class="section">
+    <div class="image">
+      <img src="https://avatars.mds.yandex.net/i?id=98d3b89939a9bf0e3a71e7883a9a8e8c2c1521f9-4009035-images-thumbs&n=13" alt="Chronic Disease Management">
+    </div>
+    <div class="content">
+      <span class="badge">Chronic Care</span>
+      <h2>Chronic Disease Management</h2>
+      <p>Integrated management for diabetes, hypertension, COPD and more—combining monitoring,
+         medication optimization, nutrition, and lifestyle coaching.</p>
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p>Email : contact@vebatiment.shop</p>
-  <p>Téléphone : +33 6 05 99 64 90</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+  <!-- 3 -->
+  <section class="section">
+    <div class="image">
+      <img src="https://avatars.mds.yandex.net/i?id=dc75b3d20fcae3da09f7e53302e593474a0b88cc-5482118-images-thumbs&n=13" alt="Diagnostics & Labs">
+    </div>
+    <div class="content">
+      <span class="badge">Diagnostics</span>
+      <h2>On-Site Diagnostics & Labs</h2>
+      <p>Timely diagnostics with on-site laboratory testing and imaging coordination to support
+         fast, accurate clinical decisions and reduce unnecessary delays.</p>
+    </div>
+  </section>
 
-<section id="map">
-  <h2>Adresse</h2>
-  <p>66 Avenue du Maréchal Foch, 78130 Les Mureaux, France</p>
-  <iframe src="https://www.google.com/maps?q=66+Avenue+du+Mar%C3%A9chal+Foch,+Les+Mureaux,+France&output=embed" allowfullscreen loading="lazy"></iframe>
-</section>
+  <!-- 4 -->
+  <section class="section">
+    <div class="image">
+      <img src="https://avatars.mds.yandex.net/i?id=505186859b560425d0551fedc484ee3403853d84-5210329-images-thumbs&n=13" alt="Women’s & Family Health">
+    </div>
+    <div class="content">
+      <span class="badge">Family Health</span>
+      <h2>Women’s & Family Health</h2>
+      <p>Comprehensive services across life stages—annual exams, prenatal counseling, pediatric
+         well visits, and coordinated family-centered care.</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="section">
+    <div class="image">
+      <img src="https://avatars.mds.yandex.net/i?id=108c2c754efed39b6b037922021482a1002fbd10-10256045-images-thumbs&n=13" alt="Care Coordination & Telehealth">
+    </div>
+    <div class="content">
+      <span class="badge">Coordination</span>
+      <h2>Care Coordination & Telehealth</h2>
+      <p>Seamless referrals to specialists, medication management, and secure telehealth visits
+         for follow-ups and remote monitoring—care wherever you are.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" style="flex-direction:column;gap:18px">
+    <div class="content" style="width:100%">
+      <span class="badge">Get in Touch</span>
+      <h2>Contact & Appointments</h2>
+      <p>Call or email to schedule your visit. Same-day appointments available for urgent needs.</p>
+      <div class="grid-contacts">
+        <div class="card">
+          <strong>Address</strong><br/>
+          1401 21st St Ste R, Sacramento, CA 95811
+        </div>
+        <div class="card">
+          <strong>Contact</strong><br/>
+          ✉️ <a href="mailto:contact@zaballsys.shop" style="color:var(--accent)">contact@zaballsys.shop</a><br/>
+          📞 +1 941 294 5853
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer>
-  &copy; 2025 V.E. BATIMENT — Tous droits réservés
+  © 2025 Hermes Ca Physicians Corp — All rights reserved
 </footer>
 
 </body>
